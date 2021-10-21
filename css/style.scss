@@ -1,0 +1,423 @@
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col{
+  &-4{
+    width: 33.33%;
+    padding: 0 15px;
+  }
+  &-6{
+    width: 50%;
+    padding: 0 20px;
+  }
+}
+body{
+  font-family: 'Urbanist', sans-serif;
+  background: #14110E;
+}
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #1C1814;
+  &__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px 0 43px;
+    position: relative;
+  }
+  &__ul{
+    display: flex;
+    list-style: none;
+  }
+  &__li{
+    padding-right: 48px;
+    &:nth-child(4){
+      padding-right: 0;
+    }
+    &:nth-child(5){
+      padding-right: 0;
+    }
+    &_photo{
+      width: 365px;
+    }
+  }
+  &__link{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  &__logo{
+    &_photo{
+      position: absolute;
+      top: 36px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+    &_icon-search{
+      padding-right: 48px;
+    }
+  }
+}
+
+.subtitle{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button{
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  background: #C99E71;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  padding: 24px 40px;
+}
+
+.pod-title{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #C99E71;
+}
+
+.title{
+  font-family: 'Righteous', cursive;
+  font-size: 48px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.hero{
+  height: calc(100vh - 125px);
+  min-height: 500px;
+  background: url("../photo/hero-photo.png") center;
+  padding: 80px 0 166px;
+  &__title{
+    font-family: 'Righteous', cursive;
+    max-width: 529px;
+    font-size: 72px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &__mean{
+    max-width: 511px;
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
+}
+
+
+
+.process{
+  padding: 140px 0 70px;
+  &_row{
+    margin: 0 -18px;
+  }
+  &_col-4{
+    padding: 0 18px;
+  }
+  &__card-box{
+    &_title{
+      font-family: 'Righteous', cursive;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+    }
+    &_number{
+      padding-right: 12px;
+      text-transform: uppercase;
+      color: #C99E71;
+    }
+  }
+}
+
+
+
+.our-history{
+  padding: 70px 0;
+  &__card-box{
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-auto-rows: 302px;
+  }
+  &__photo{
+    height: 100%;
+    width: 100%;
+  }
+  &__rule-photo{
+    height: 100%;
+    width: 100%;
+  }
+  &__box-about{
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+  }
+  &__element-2{
+    grid-row: 2;
+  }
+  &__box-about{
+    background: #1C1814;
+    padding: 120px 56px 147px;
+  }
+  &__subtitle{
+    margin-bottom: 12px;
+  }
+  &__title{
+    max-width: 398px;
+    margin-bottom: 36px;
+  }
+  &__mean{
+    max-width: 398px;
+  }
+}
+
+
+
+.coffee-title{
+  font-family: 'Righteous', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.product{
+  padding: 70px 0;
+  text-align: center;
+  &__row{
+    margin: 0 -15px;
+  }
+  &__pod-title{
+    margin-bottom: 12px;
+  }
+  &__title{
+    margin-bottom: 56px;
+  }
+  &__card-box{
+    background: #121315;
+    padding: 48px 48px 40px;
+    margin-bottom: 56px;
+  }
+  &__card-box_title{
+    margin-bottom: 38px;
+  }
+  &__photo{
+    margin-bottom: 36px;
+  }
+  &__shop-button{
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 13px 20px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__button-icon{
+    padding-right: 15px;
+  }
+  &__star-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__card-box_margin{
+    margin-bottom: 20px;
+  }
+  &__coffee-cost{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &_orange{
+      color: #C99E71;
+    }
+  }
+  &__button{
+    padding: 20px 36px;
+  }
+}
+
+
+
+.cta{
+  padding: 70px 0;
+  &__card-box{
+    background: #1C1814;
+    padding: 85px 80px 84px 169px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    max-width: 501px;
+    margin-bottom: 36px;
+  }
+  &__text{
+    max-width: 535px;
+    margin-bottom: 36px;
+  }
+  &__button{
+    padding: 20px 36px;
+  }
+}
+
+
+.menu{
+  padding: 70px 0;
+  text-align: center;
+  &__row{
+    margin: 0 -20px;
+  }
+  &__col-6{
+    margin-bottom: 36px;
+  }
+  &__pod-title{
+    margin-bottom: 12px;
+  }
+  &__title{
+    margin-bottom: 56px;
+  }
+  &__card-box{
+    border: 1px solid #32323D;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+  }
+  &__subtitle{
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-right: 117px;
+  }
+  &__icon{
+    padding-right: 20px;
+  }
+}
+
+
+.testimonial{
+  padding: 70px 0;
+  text-align: center;
+  &__pod-title{
+    margin-bottom: 12px;
+  }
+  &__title{
+    margin-bottom: 56px;
+  }
+  &__card-box{
+    background: #1C1814;
+    padding: 40px;
+    width: 50%;
+    margin-bottom: 36px;
+  }
+  &__text-photo-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__text{
+    max-width: 336px;
+  }
+  &__name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  &__position{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+    text-align: left;
+  }
+  &__icon-box{
+    text-align: right;
+  }
+}
+
+
+.table-book{
+  padding: 70px 0;
+  &__card-box{
+    display: flex;
+    align-items: center;
+  }
+  &__form-box{
+    background: #1C1814;
+    text-align: center;
+    padding: 72px 48px;
+  }
+  &__pod-title{
+    margin-bottom: 12px;
+  }
+  &__title{
+    margin-bottom: 56px;
+  }
+  &__input{
+    background: #14110E;
+    padding: 16px 20px;
+    border: none;
+    width: 100%;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+    &_margin{
+      margin-bottom: 56px;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &__button{
+    padding: 20px 36px;
+  }
+}
+
+
+.news{
+  padding: 70px 0;
+  text-align: center;
+  &__pod-title{
+    margin-bottom: 12px;
+  }
+  &__title{
+    margin-bottom: 56px;
+  }
+}
+
+
