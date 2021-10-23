@@ -4,9 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Coffee Shop</title>
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Righteous&family=Urbanist:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -16,14 +19,14 @@
     <div class="header__menu">
       <nav class="header__nav">
         <ul class="header__ul">
-          <li class="header__li"><a href="#" class="header__link">Home</a></li>
-          <li class="header__li"><a href="#" class="header__link">About</a></li>
-          <li class="header__li"><a href="#" class="header__link">Menu</a></li>
-          <li class="header__li"><a href="#" class="header__link">Reservation</a></li>
+          <li class="header__li"><a href="#home" class="header__link">Home</a></li>
+          <li class="header__li"><a href="#about" class="header__link">About</a></li>
+          <li class="header__li"><a href="#menu" class="header__link">Menu</a></li>
+          <li class="header__li"><a href="#reserv" class="header__link">Reservation</a></li>
           <li class="header__li header__li_photo"></li>
-          <li class="header__li"><a href="#" class="header__link">Pages</a></li>
-          <li class="header__li"><a href="#" class="header__link">Shop</a></li>
-          <li class="header__li"><a href="#" class="header__link">Contact</a></li>
+          <li class="header__li"><a href="#bag" class="header__link">Pages</a></li>
+          <li class="header__li"><a href="#shop" class="header__link">Shop</a></li>
+          <li class="header__li"><a href="#contact" class="header__link">Contact</a></li>
         </ul>
       </nav>
       <img class="header__logo_photo" src="photo/coffee-logo.svg" alt="coffee">
@@ -34,7 +37,7 @@
 </div>
 
 
-<div class="hero">
+<div id="home" class="hero">
   <div class="container">
     <div class="hero__title">
       Enjoy Your
@@ -51,8 +54,8 @@
 
 <div class="process">
   <div class="container">
-      <div class="row process_row">
-        <div class="col-4 process_col-4">
+      <div class="row process__row">
+        <div class="col-4 process__col-4">
             <div class="process__card-box">
               <div class="process__card-box_title">
                 <span class="process__card-box_number">01</span>
@@ -61,7 +64,7 @@
               <img class="process__card-box_photo" src="photo/process-photo.png" alt="coffee" >
             </div>
           </div>
-        <div class="col-4 process_col-4">
+        <div class="col-4 process__col-4">
           <div class="process__card-box">
             <div class="process__card-box_title">
               <span class="process__card-box_number">02</span>
@@ -70,7 +73,7 @@
             <img class="process__card-box_photo" src="photo/process-photo-2.png" alt="coffee" >
           </div>
         </div>
-        <div class="col-4 process_col-4">
+        <div class="col-4 process__col-4">
           <div class="process__card-box">
             <div class="process__card-box_title">
               <span class="process__card-box_number">03</span>
@@ -84,14 +87,15 @@
 </div>
 
 
-<div class="our-history">
+
+<div id="about" class="our-history">
   <div class="container">
       <div class="our-history__card-box">
           <div class="our-history__element-1">
             <img class="our-history__photo" src="photo/our-history-photo-3.png" alt="our-history-coffee" >
           </div>
         <div class="our-history__element-3">
-          <img class="our-history_rule-photo" src="photo/our-history-photo.png" alt="our-history-coffee" >
+          <img class="our-history__rule-photo" src="photo/our-history-photo.png" alt="our-history-coffee" >
         </div>
         <div class="our-history__box-about">
           <div class="pod-title our-history__subtitle">Our history</div>
@@ -113,12 +117,12 @@
 
 
 
-<div class="product">
+<div id="shop" class="product">
   <div class="container">
     <div class="pod-title product__pod-title">Popular Product</div>
     <div class="title product__title">Coffee popular Product</div>
     <div class="row product__row">
-      <div class="col-4">
+      <div class="col-4 product__col-4">
         <div class="product__card-box">
           <img src="photo/product-coffee.png" alt="coffee" class="product__photo">
           <div class="coffee-title product__card-box_title">brazil coffee gred</div>
@@ -127,7 +131,7 @@
           </button>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 product__col-4">
         <div class="product__card-box">
           <img src="photo/product-coffee.png" alt="coffee" class="product__photo">
           <div class="pod-title product__star-title">Coffee
@@ -143,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 product__col-4">
         <div class="product__card-box">
           <img src="photo/product-coffee.png" alt="coffee" class="product__photo">
           <div class="pod-title product__star-title">Coffee
@@ -160,12 +164,12 @@
         </div>
       </div>
     </div>
-    <button class="button product__button">View all product</button>
+    <button class="button button-white button-animated product__button">View all product</button>
   </div>
 </div>
 
 
-<div class="cta">
+<div id="bag" class="cta">
   <div class="container">
     <div class="cta__card-box">
       <img class="cta__photo" src="photo/cta-mixer.png" alt="mixer" >
@@ -187,7 +191,7 @@
 </div>
 
 
-<div class="menu">
+<div  class="menu">
   <div class="container">
     <div class="pod-title munu__pod-title">Menu</div>
     <div class="title menu__title">Coffee popular menu</div>
@@ -234,14 +238,14 @@
           <div class="pod-title menu__time">$12:00</div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-6 menu__col-6">
         <div class="menu__card-box">
           <img class="menu__icon" src="photo/menu-icon-2.png" alt="menu-icon" >
           <div class="menu__subtitle">Americano rosted gred</div>
           <div class="pod-title menu__time">$12:00</div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-6 menu__col-6">
         <div class="menu__card-box">
           <img class="menu__icon" src="photo/menu-icon-8.png" alt="menu-icon" >
           <div class="menu__subtitle">Americano rosted gred</div>
@@ -261,45 +265,81 @@
     <div class="title testimonial__title">
       Says our customers
     </div>
-    <div class="testimonial__card-box">
-      <div class="testimonial__text-photo-box">
-        <img class="testimonial__photo" src="photo/testimonial-photo.png" alt="photo">
-        <div class="subtitle testimonial__text">
-          Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+    <div class="testimonial__card-boxes">
+      <div class="testimonial__card-box">
+        <div class="testimonial__text-photo-box">
+          <img class="testimonial__photo" src="photo/testimonial-photo.png" alt="photo">
+          <div class="subtitle testimonial__text">
+            Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+          </div>
+        </div>
+        <div class="testimonial__name">John Smith</div>
+        <div class="testimonial__position">Product Designer</div>
+        <div class="testimonial__icon-box">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
         </div>
       </div>
-      <div class="testimonial__name">John Smith</div>
-      <div class="testimonial__position">Product Designer</div>
-      <div class="testimonial__icon-box">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-      </div>
-    </div>
-    <div class="testimonial__card-box">
-      <div class="testimonial__text-photo-box">
-        <img class="testimonial__photo" src="photo/testimonial-photo-2.png" alt="photo">
-        <div class="subtitle testimonial__text">
-          Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+      <div class="testimonial__card-box">
+        <div class="testimonial__text-photo-box">
+          <img class="testimonial__photo" src="photo/testimonial-photo-2.png" alt="photo">
+          <div class="subtitle testimonial__text">
+            Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+          </div>
+        </div>
+        <div class="testimonial__name">Brett Lee</div>
+        <div class="testimonial__position">User Experience Designer</div>
+        <div class="testimonial__icon-box">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
         </div>
       </div>
-      <div class="testimonial__name">Brett Lee</div>
-      <div class="testimonial__position">User Experience Designer</div>
-      <div class="testimonial__icon-box">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
-        <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+      <div class="testimonial__card-box">
+        <div class="testimonial__text-photo-box">
+          <img class="testimonial__photo" src="photo/testimonial-photo.png" alt="photo">
+          <div class="subtitle testimonial__text">
+            Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+          </div>
+        </div>
+        <div class="testimonial__name">John Smith</div>
+        <div class="testimonial__position">Product Designer</div>
+        <div class="testimonial__icon-box">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+        </div>
+      </div>
+      <div class="testimonial__card-box">
+        <div class="testimonial__text-photo-box">
+          <img class="testimonial__photo" src="photo/testimonial-photo-2.png" alt="photo">
+          <div class="subtitle testimonial__text">
+            Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+          </div>
+        </div>
+        <div class="testimonial__name">Brett Lee</div>
+        <div class="testimonial__position">User Experience Designer</div>
+        <div class="testimonial__icon-box">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+          <img class="testimonial__icon" src="photo/gold-star.svg" alt="gold-star">
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
-<div class="table-book">
+<div id="reserv" class="table-book">
   <div class="container">
       <div class="table-book__card-box">
         <img class="table-book__photo" src="photo/table-book-photo.png" alt="photo">
@@ -321,20 +361,98 @@
 </div>
 
 
-<div class="news">
+<div id="menu" class="news">
   <div class="container">
     <div class="pod-title news__pod-title">Testimonial</div>
     <div class="title news__title">Our latest news</div>
-    <div class="row">
-      <div class="col-4">
+    <div class="row news__row">
+      <div class="col-4 news__col-4">
         <div class="news__card-box">
           <img class="news__photo" src="photo/news.png" alt="photo">
-
+          <div class="news__text-box">
+            <div class="news__name">
+              <span class="news__name_orange">By: </span>
+              rasaline
+            </div>
+            <div class="news__date" >23.01.2021</div>
+            <div class="news__mean">
+              Ideal cocktails from barmen....
+            </div>
+            <div class="pod-title news__link">
+              Read More <img class="news__link_photo" src="photo/news-arrow-right.svg" alt="arrow-right">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 news__col-4">
+        <div class="news__card-box">
+          <img class="news__photo" src="photo/news-2.png" alt="photo">
+          <div class="news__text-box">
+            <div class="news__name">
+              <span class="news__name_orange">By: </span>
+              rasaline
+            </div>
+            <div class="news__date" >23.01.2021</div>
+            <div class="news__mean">
+              Ideal cocktails from barmen....
+            </div>
+            <div class="pod-title news__link">
+              Read More <img class="news__link_photo" src="photo/news-arrow-right.svg" alt="arrow-right">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 news__col-4">
+        <div class="news__card-box">
+          <img class="news__photo" src="photo/news-3.png" alt="photo">
+          <div class="news__text-box">
+            <div class="news__name">
+              <span class="news__name_orange">By: </span>
+              rasaline
+            </div>
+            <div class="news__date" >23.01.2021</div>
+            <div class="news__mean">
+              Ideal cocktails from barmen....
+            </div>
+            <div class="pod-title news__link">
+              Read More <img class="news__link_photo" src="photo/news-arrow-right.svg" alt="arrow-right">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+
+
+<footer id="contact" class="footer">
+  <div class="container">
+      <div class="footer__menu-box">
+        <img class="footer__photo" src="photo/coffee-logo.svg" alt="coffe-logo">
+        <nav class="footer__nav">
+          <ul class="footer__ul">
+            <li class="footer__li"><a href="#" class="footer__link">Home</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Rerervation</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Menu</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">About</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Pages</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Shop</a></li>
+            <li class="footer__li"><a href="#" class="footer__link">Blogs</a></li>
+          </ul>
+        </nav>
+        <button class="footer__button"  type="button">Enter your email <img class="footer__small-button" src="photo/" alt="button"></button>
+      </div>
+  </div>
+  <div class="footer__title">
+    e-Tennis © 2021. All rights reserved.
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

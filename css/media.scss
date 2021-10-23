@@ -1,0 +1,934 @@
+@media (max-width: 1200px) {
+//  from 1200px to 992px
+  .container{
+    max-width: 950px;
+  }
+  .col{
+    &-4{
+      width: 41.335%;
+    }
+  }
+  .header{
+    &__li{
+      padding-right: 30px;
+    }
+    &__li_photo {
+      width: 257px;
+    }
+  }
+
+
+  .process{
+    padding: 130px 0 40px;
+    &__col-4{
+        margin: 0 auto 30px;
+    }
+  }
+
+
+  .our-history{
+    padding: 60px 0;
+    &__card-box {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 366px;
+    }
+    &__box-about {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+    &__box-about {
+      padding: 45px 58px 50px;
+    }
+    &__mean {
+      max-width: 791px;
+    }
+  }
+
+
+  .product{
+    padding: 60px 0;
+    &__col-4{
+      margin: 0 auto;
+    }
+  }
+
+
+  .cta{
+    padding: 60px 0;
+    &__card-box{
+      padding: 76px 43px 77px 43px;
+    }
+  }
+
+
+  .menu{
+    padding: 60px 0;
+    &__card-box{
+      padding: 18px
+    }
+    &__subtitle {
+      font-size: 22px;
+      padding-right: 38px;
+    }
+  }
+
+
+  .testimonial{
+    padding: 60px 0;
+    &__card-box{
+      width: 530px;
+    }
+  }
+
+
+  .table-book{
+    padding: 60px 0;
+    &__photo{
+      width: 50%;
+    }
+    &__form-box {
+      padding: 40px 44px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__input{
+      margin-bottom: 18px;
+      &_margin {
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+
+  .news{
+    padding: 60px 0 30px;
+    &__col-4{
+      margin: 0 auto 30px;
+    }
+  }
+
+
+  .footer{
+    padding: 68px 0 0;
+    &__menu-box{
+      flex-wrap: wrap;
+    }
+    &__button, &__photo, &__nav{
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+@media (max-width: 992px) {
+//  from 992px to 768px
+  .container{
+    max-width: 700px;
+  }
+  .col{
+    &-4 {
+      width: 100%;
+    }
+    &-6{
+      width: 80%;
+    }
+  }
+  .title {
+    line-height: 120%;
+    font-size: 44px;
+  }
+  .pod-title {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .header{
+    &__ul{
+      display: none;
+    }
+    &__logo_icon-search {
+      margin-left: auto;
+    }
+  }
+
+
+  .hero{
+    &__title {
+      max-width: 518px;
+      font-size: 65px;
+      line-height: 121%;
+      margin-bottom: 26px;
+    }
+  }
+
+
+  .process{
+    padding: 125px 0 25px;
+    &__row {
+      margin: 0;
+    }
+    &__card-box{
+      text-align: center;
+    }
+
+    &__card-box_photo {
+      height: 350px;
+    }
+  }
+
+
+  .our-history{
+    padding: 55px 0;
+    &__card-box{
+      grid-gap: 10px;
+    }
+    &__photo{
+      height: 90%;
+      width: 90%
+    }
+    &__rule-photo{
+      height: 95%;
+    }
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+
+
+  .product{
+    padding: 55px 0;
+    &__card-box{
+      max-width: 400px;
+      padding: 46px 30px 40px;
+      margin: 0 auto 35px;
+    }
+  }
+
+  .cta{
+    padding: 55px 0;
+    &__cadr-box{
+      flex-wrap: wrap;
+    }
+  }
+
+
+  .menu{
+    padding: 55px 0;
+    &__col-6{
+      margin: 0 auto 25px;
+    }
+  }
+
+
+
+  .testimonial{
+    padding: 55px 0;
+    &__card-box{
+      padding: 35px;
+    }
+  }
+
+
+  .table-book{
+    padding: 55px 0;
+    &__card-box{
+      position: relative;
+    }
+    &__photo {
+      width: 100%;
+    }
+    &__form-box {
+      max-width: 500px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+
+
+  .news{
+    padding: 55px 0;
+    &__card-box{
+      margin: 0 auto;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+//  from 768px to 576px
+  .container{
+    max-width: 550px;
+  }
+  .hero{
+    &__title {
+      font-size: 58px;
+      line-height: 107%;
+      margin-bottom: 22px;
+    }
+    &__mean {
+      max-width: 437px;
+      margin-bottom: 39px;
+      font-size: 15px;
+    }
+  }
+
+
+  .process {
+    padding: 100px 0 15px;
+    &__card-box{
+      margin-bottom: 20px;
+      &_photo {
+        height: 380px;
+      }
+      &_title {
+        font-size: 21px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+  .our-history{
+    padding: 45px 0 20px;
+    &__card-box {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 302px;
+      text-align: center;
+      grid-gap: 27px;
+    }
+    &__element-3 {
+      grid-column: 1;
+      grid-row: 3/6;
+    }
+    &__element-3 {
+      grid-column: 1;
+      grid-row: 4/6;
+    }
+    &__photo {
+        height: 99%;
+        width: 63%;
+    }
+    &__rule-photo {
+      height: 86%;
+      width: 58%;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__subtitle {
+      margin-bottom: 9px;
+    }
+    &__box-about {
+        max-width: 500px;
+        padding: 26px 37px 28px;
+        margin: 0 auto;
+    }
+  }
+  .title {
+    line-height: 110%;
+    font-size: 38px;
+  }
+  .subtitle {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .pod-title {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .coffee-title {
+    font-size: 21px;
+    line-height: 22px;
+  }
+  .product {
+    padding: 0 0 45px;
+    &__row{
+      margin: 0;
+    }
+    &__title {
+      margin-bottom: 35px;
+    }
+    &__pod-title {
+      margin-bottom: 7px;
+    }
+    &__photo {
+      margin-bottom: 25px;
+      height: 295px;
+    }
+    &__card-box_title {
+      margin-bottom: 20px;
+    }
+    &__card-box {
+      max-width: 343px;
+      padding: 37px 55px 33px;
+      margin: 0 auto 32px;
+      &_margin {
+        margin-bottom: 15px;
+      }
+    }
+    &__coffee-cost {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+
+
+  .cta{
+    padding: 45px 0;
+    &__title {
+    margin-bottom: 25px;
+    }
+    &__card-box{
+      max-width: 480px;
+      flex-wrap: wrap-reverse;
+      margin: 0 auto;
+      padding: 48px 32px;
+    }
+    &__photo{
+      width: 49%;
+      margin: 0 auto;
+    }
+    &__text-box{
+      margin-bottom: 55px;
+    }
+  }
+
+
+
+  .menu {
+    padding: 45px 0;
+    &__row{
+      margin: 0;
+    }
+    &__col-6 {
+      margin: 0 auto 20px;
+    }
+    &__title {
+      margin-bottom: 35px;
+    }
+    &__icon{
+      height: 55px;
+    }
+    &__card-box {
+      padding: 15px;
+    }
+    &__subtitle {
+      font-size: 19px;
+      padding-right: 45px;
+    }
+  }
+
+
+
+  .testimonial {
+    padding: 40px 0;
+    &__pod-title {
+      margin-bottom: 8px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__card-box{
+      margin: 17px;
+      padding: 25px;
+    }
+    &__text {
+      max-width: 241px;
+      font-size: 14px;
+    }
+  }
+
+
+  .table-book {
+    padding: 45px 0;
+    &__form-box {
+      max-width: 444px;
+      padding: 30px 34px;
+    }
+    &__pod-title {
+      margin-bottom: 9px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__input {
+      margin-bottom: 14px;
+      &_margin {
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+
+  .news {
+    padding: 45px 0;
+    &__row{
+      margin: 0;
+    }
+    &__pod-title {
+      margin-bottom: 8px;
+    }
+    &__title {
+      margin-bottom: 32px;
+    }
+    &__text-box {
+      padding: 20px 22px 22px;
+      font-size: 16px;
+    }
+    &__mean {
+      font-size: 18px;
+      line-height: 143%;
+      margin-bottom: 28px;
+    }
+    &__name{
+      margin-bottom: 14px;
+      padding-right: 165px;
+    }
+    &-title {
+      font-size: 14px;
+    }
+  }
+  .footer{
+    padding: 45px 0 0;
+    &__ul{
+      display: none;
+    }
+    &__menu-box{
+      margin-bottom: 68px;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 576px) {
+  //  from 576px to 480px
+  .container {
+    max-width: 450px;
+  }
+  .col{
+    &-6 {
+      width: 89%;
+    }
+  }
+  .header {
+    &__menu{
+      padding: 45px 0 36px;
+    }
+    &__logo {
+      &_photo {
+        top: 25px;
+        height: 52px;
+      }
+      &_icon-search, &_icon-bag {
+        height: 23px;
+      }
+    }
+  }
+
+
+  .hero {
+    min-height: 422px;
+    padding: 80px 0 141px;
+    &__title {
+      font-size: 50px;
+      line-height: 106%;
+      margin-bottom: 18px;
+    }
+    &__mean{
+      margin-bottom: 32px;
+    }
+  }
+
+
+  .process {
+    padding: 90px 0 10px;
+    &__card-box{
+      margin-bottom: 10px;
+      &_photo {
+        height: 350px;
+      }
+    }
+  }
+
+  .pod-title {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .title {
+    line-height: 101%;
+    font-size: 34px;
+  }
+
+  .our-history{
+    padding: 40px 0 10px;
+    &__box-about {
+      max-width: 432px;
+      padding: 20px;
+    }
+    &__title{
+      margin-bottom: 13px;
+    }
+  }
+
+
+  .coffee-title {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .product{
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__photo {
+      margin-bottom: 23px;
+      height: 277px;
+    }
+    &__card-box {
+      max-width: 313px;
+      padding: 30px 20px;
+      margin: 0 auto 30px;
+      &_margin {
+        margin-bottom: 12px;
+      }
+    }
+    &__star-title{
+      margin-bottom: 16px;
+    }
+    &__coffee-cost {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
+
+
+  .cta{
+    &__card-box {
+      max-width: 434px;
+      padding: 30px 22px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text-box {
+    margin-bottom: 40px;
+  }
+    &__text {
+      margin-bottom: 25px;
+    }
+  }
+
+
+  .menu{
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 17px;
+      padding-right: 32px;
+    }
+  }
+
+
+  .testimonial{
+    &__title {
+      margin-bottom: 23px;
+    }
+    &__card-box{
+      padding: 18px;
+      position: relative;
+    }
+    &__text-photo-box{
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    &__text {
+      max-width: 295px;
+    }
+    &__photo{
+      height: 154px;
+      margin-bottom:10px;
+    }
+    &__name {
+      position: absolute;
+      top: 33px;
+      right: 28px;
+    }
+    &__position {
+      max-width: 107px;
+      min-height: 40px;
+      text-align: center;
+      position: absolute;
+      top: 50px;
+      right: 19px;
+    }
+    &__icon-box {
+      position: absolute;
+      top: 104px;
+      right: 20px;
+    }
+
+  }
+
+
+  .table-book{
+    padding: 22px 0 45px;
+    &__form-box {
+      max-width: 319px;
+      padding: 24px 20px;
+    }
+    &__title {
+      margin-bottom: 22px;
+    }
+  }
+
+
+  .news{
+    &__card-box{
+      max-width: 320px;
+    }
+    &__photo{
+      height: 314px;
+    }
+    &__text-box {
+      padding: 10px 15px 16px;
+    }
+    &__name {
+      margin-bottom: 13px;
+      padding-right: 134px;
+    }
+    &__mean{
+      margin-bottom: 22px;
+    }
+  }
+
+
+
+  .footer{
+    padding: 30px 0 0;
+    &__menu-box {
+      margin-bottom: 58px;
+    }
+    &__photo{
+      height: 52px;
+    }
+    &__title{
+      padding: 28px 0;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+  //  from 480px to 320px
+  .container {
+    max-width: 310px;
+  }
+  .col {
+    &-6 {
+      width: 95%;
+    }
+  }
+  .header {
+    &__logo_icon-search {
+      padding-right: 21px;
+    }
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 22px 36px;
+  }
+
+  .hero {
+    min-height: 462px;
+
+    &__title {
+      font-size: 38px;
+      line-height: 123%;
+      margin-bottom: 30px;
+    }
+
+    &__mean {
+      max-width: 298px;
+      margin-bottom: 48px;
+    }
+  }
+
+
+  .process {
+    padding: 80px 0 10px;
+
+    &__card-box {
+      margin-bottom: 7px;
+
+      &_photo {
+        height: 286px;
+      }
+
+      &_title {
+        font-size: 18px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .title {
+    line-height: 101%;
+    font-size: 26px;
+  }
+  .our-history {
+    &__card-box {
+      grid-gap: 0;
+    }
+
+    &__photo {
+      height: 82%;
+      width: 78%;
+    }
+  }
+
+  .coffee-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .product {
+    &__photo {
+      margin-bottom: 19px;
+      height: 238px;
+    }
+
+    &__card-box {
+      max-width: 230px;
+      padding: 26px 15px;
+      margin: 0 auto 28px;
+    }
+
+    &__shop-button {
+      padding: 12px;
+    }
+  }
+
+  .cta {
+    &__title {
+      margin-bottom: 17px;
+    }
+
+    &__card-box {
+      padding: 26px 19px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      padding: 20px 30px;
+    }
+
+    &__photo {
+      width: 44%;
+    }
+
+    &__text-box {
+      margin-bottom: 37px;
+    }
+  }
+
+  .menu {
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__card-box {
+      padding: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    &__icon {
+      height: 52px;
+      margin-bottom: 10px;
+    }
+
+    &__time {
+      position: absolute;
+      right: 17px;
+    }
+  }
+
+
+  .testimonial {
+    &__card-box{
+      height: 296px;
+    }
+    &__photo{
+      margin: 0 auto;
+    }
+    &__text{
+      display: none;
+    }
+    &__name {
+      font-size: 17px;
+      top: 190px;
+      right: 63px;
+    }
+    &__position{
+      top: 207px;
+      right: 48px;
+    }
+    &__icon{
+      height: 16px;
+    }
+    &__icon-box{
+      top: 258px;
+      right: 58px;
+    }
+  }
+
+
+  .table-book{
+    &__card-box{
+      min-height: 393px;
+    }
+    &__photo {
+      display: none;
+    }
+    &__input{
+      font-size: 16px;
+    }
+    &__button{
+      padding: 20px 30px;
+    }
+  }
+
+
+  .news{
+    &__name {
+      margin-bottom: 9px;
+      padding-right: 76px;
+    }
+    &__card-box {
+      max-width: 260px;
+    }
+    &__photo{
+      height: 255px;
+    }
+    &__mean {
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+  }
+}

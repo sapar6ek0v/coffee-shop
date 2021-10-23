@@ -21,6 +21,8 @@ body{
   background: #14110E;
 }
 .header{
+  position: fixed;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -54,6 +56,10 @@ body{
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    &:hover{
+      color: #C99E71;
+      text-decoration: underline;
+    }
   }
   &__logo{
     &_photo{
@@ -88,6 +94,17 @@ body{
   color: #FFFFFF;
   border: none;
   padding: 24px 40px;
+  position: relative;
+  text-shadow: 0 -1px 1px #777;
+  &:hover{
+    -webkit-box-shadow: 0 22px 44px rgba(201, 158, 113, 0.2);
+    box-shadow: 0 22px 44px rgba(201, 158, 113, 0.2);
+  }
+  &:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+  }
 }
 
 .pod-title{
@@ -106,7 +123,7 @@ body{
 .hero{
   height: calc(100vh - 125px);
   min-height: 500px;
-  background: url("../photo/hero-photo.png") center;
+  background: url("../photo/hero-photo.png") center/ cover;
   padding: 80px 0 166px;
   &__title{
     font-family: 'Righteous', cursive;
@@ -127,13 +144,19 @@ body{
 
 .process{
   padding: 140px 0 70px;
-  &_row{
+  &__row{
     margin: 0 -18px;
   }
-  &_col-4{
+  &__col-4{
     padding: 0 18px;
   }
   &__card-box{
+    &_photo{
+      transition: 1s;
+      &:hover{
+        transform: scale(1.060);
+      }
+    }
     &_title{
       font-family: 'Righteous', cursive;
       font-size: 24px;
@@ -162,21 +185,35 @@ body{
   &__photo{
     height: 100%;
     width: 100%;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.060);
+    }
   }
   &__rule-photo{
     height: 100%;
     width: 100%;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.060);
+    }
   }
-  &__box-about{
-    grid-column: 3 / 5;
+  &__element-3{
+    grid-column: 2;
     grid-row: 1 / 3;
-  }
-  &__element-2{
-    grid-row: 2;
   }
   &__box-about{
     background: #1C1814;
     padding: 120px 56px 147px;
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+    transition: 400ms;
+    &:hover{
+      transform: scale(1.060);
+    }
+  }
+  &__element-2{
+    grid-row: 2;
   }
   &__subtitle{
     margin-bottom: 12px;
@@ -216,6 +253,10 @@ body{
     background: #121315;
     padding: 48px 48px 40px;
     margin-bottom: 56px;
+    transition: 500ms;
+    &:hover{
+      transform: scale(1.060);
+    }
   }
   &__card-box_title{
     margin-bottom: 38px;
@@ -313,7 +354,7 @@ body{
     font-size: 24px;
     line-height: 30px;
     color: #FFFFFF;
-    padding-right: 117px;
+    padding-right: 92px;
   }
   &__icon{
     padding-right: 20px;
@@ -332,9 +373,13 @@ body{
   }
   &__card-box{
     background: #1C1814;
-    padding: 40px;
+    padding: 20px;
     width: 50%;
-    margin-bottom: 36px;
+    margin: 20px;
+    &:hover{
+      -webkit-box-shadow:  0 22px 44px rgba(201, 158, 113, 0.2);
+      box-shadow: 0 22px 44px rgba(201, 158, 113, 0.2);
+    }
   }
   &__text-photo-box{
     display: flex;
@@ -362,7 +407,8 @@ body{
     text-align: left;
   }
   &__icon-box{
-    text-align: right;
+    display: flex;
+    justify-content: end;
   }
 }
 
@@ -412,12 +458,119 @@ body{
 .news{
   padding: 70px 0;
   text-align: center;
+  &__row{
+    margin: 0 -18px;
+  }
+  &__col-4{
+    padding: 0 18px;
+  }
   &__pod-title{
     margin-bottom: 12px;
   }
   &__title{
     margin-bottom: 56px;
   }
+  &__card-box{
+    background: #1C1814;
+    width: 366px;
+    transition: 500ms;
+    &:hover{
+      transform: scale(1.060);
+    }
+  }
+  &__text-box{
+    padding: 20px 24px 28px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__name{
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding-right: 142px;
+    display: inline-block;
+    &_orange{
+      color: #C99E71;
+    }
+  }
+  &__date{
+    display: inline-block;
+    font-weight: 500;
+  }
+  &__mean{
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 33px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    &_photo{
+      padding-left: 8px;
+    }
+  }
+}
+
+
+
+.footer{
+  padding: 78px 0 0;
+  &__menu-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 78px;
+  }
+  &__photo{
+    padding-right: 36px;
+  }
+  &__ul{
+    list-style: none;
+    display:flex;
+  }
+  &__li{
+    padding-right: 40px;
+    &:last-child{
+      padding-right: 82px;
+    }
+  }
+  &__link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+    &:hover{
+      color: #C99E71;
+      text-decoration: underline;
+    }
+  }
+  &__button{
+    background: #1C1814;
+    border-radius: 36px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    padding: 12px 12px 12px 28px;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+ &__title{
+   background: #1C1814;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 180%;
+   color: #FFFFFF;
+   text-align: center;
+   padding: 32px 0;
+ }
 }
 
 
