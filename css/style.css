@@ -30,6 +30,9 @@ body {
   z-index: 20;
   background: #1C1814;
 }
+.header__burger {
+  display: none;
+}
 .header__menu {
   display: flex;
   justify-content: space-between;
@@ -151,7 +154,7 @@ body {
   padding: 0 18px;
 }
 .process__card-box_photo {
-  transition: 1s;
+  transition: 500ms;
 }
 .process__card-box_photo:hover {
   transform: scale(1.06);
@@ -181,7 +184,7 @@ body {
 .our-history__photo {
   height: 100%;
   width: 100%;
-  transition: 1s;
+  transition: 500ms;
 }
 .our-history__photo:hover {
   transform: scale(1.06);
@@ -189,7 +192,7 @@ body {
 .our-history__rule-photo {
   height: 100%;
   width: 100%;
-  transition: 1s;
+  transition: 500ms;
 }
 .our-history__rule-photo:hover {
   transform: scale(1.06);
@@ -339,6 +342,10 @@ body {
   padding: 24px;
   display: flex;
   align-items: center;
+  transition: 300ms;
+}
+.menu__card-box:hover {
+  transform: scale(1.06);
 }
 .menu__subtitle {
   font-family: "Righteous", cursive;
@@ -461,7 +468,7 @@ body {
 .news__card-box {
   background: #1C1814;
   width: 366px;
-  transition: 500ms;
+  transition: 400ms;
 }
 .news__card-box:hover {
   transform: scale(1.06);
@@ -533,9 +540,14 @@ body {
   color: #C99E71;
   text-decoration: underline;
 }
-.footer__button {
-  background: #1C1814;
-  border-radius: 36px;
+.footer__label {
+  display: flex;
+  align-items: center;
+}
+.footer__input {
+  background: #1C1814 center/cover;
+  border: none;
+  border-radius: 36px 0 0 36px;
   font-family: "Urbanist", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -543,10 +555,19 @@ body {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.8);
   opacity: 0.8;
-  padding: 12px 12px 12px 28px;
+  padding: 21px 0 22px 28px;
+}
+.footer__input:focus {
+  outline: none;
+}
+.footer__button {
+  padding: 10px 11px 9px 26px;
+  background: #1C1814 center/cover;
   border: none;
-  display: flex;
-  align-items: center;
+  border-radius: 0 36px 36px 0;
+}
+.footer__button_photo {
+  height: 48px;
 }
 .footer__title {
   background: #1C1814;

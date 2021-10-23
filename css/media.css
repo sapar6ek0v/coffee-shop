@@ -132,6 +132,34 @@
   .header__ul {
     display: none;
   }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__span {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
   .header__logo_icon-search {
     margin-left: auto;
   }
@@ -712,6 +740,12 @@
 
   .our-history__card-box {
     grid-gap: 0;
+  }
+  .our-history__box-about {
+    max-width: 302px;
+  }
+  .our-history__mean {
+    font-size: 13px;
   }
   .our-history__photo {
     height: 82%;
