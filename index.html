@@ -18,18 +18,18 @@
   <div class="container">
     <div class="header__menu">
       <div class="header__burger">
-        <span class="header__span"></span>
+        <span></span>
       </div>
       <nav class="header__nav">
-        <ul class="header__ul">
-          <li class="header__li"><a href="#home" class="header__link">Home</a></li>
-          <li class="header__li"><a href="#about" class="header__link">About</a></li>
-          <li class="header__li"><a href="#menu" class="header__link">Menu</a></li>
-          <li class="header__li"><a href="#reserv" class="header__link">Reservation</a></li>
+        <ul class="header__ul" id="header__ul">
+          <li class="header__li"><a data-goto="#home" href="#" class="header__link">Home</a></li>
+          <li class="header__li"><a data-goto="#about" href="#" class="header__link">About</a></li>
+          <li class="header__li"><a data-goto="#menu" href="#" class="header__link">Menu</a></li>
+          <li class="header__li"><a data-goto="#reserv" href="#" class="header__link">Reservation</a></li>
           <li class="header__li header__li_photo"></li>
-          <li class="header__li"><a href="#bag" class="header__link">Pages</a></li>
-          <li class="header__li"><a href="#shop" class="header__link">Shop</a></li>
-          <li class="header__li"><a href="#contact" class="header__link">Contact</a></li>
+          <li class="header__li"><a data-goto="#bag" href="#" class="header__link">Pages</a></li>
+          <li class="header__li"><a data-goto="#shop" href="#" class="header__link">Shop</a></li>
+          <li class="header__li"><a data-goto="#contact" href="#" class="header__link">Contact</a></li>
         </ul>
       </nav>
       <img class="header__logo_photo" src="photo/coffee-logo.svg" alt="coffee">
@@ -138,11 +138,13 @@
         <div class="product__card-box">
           <img src="photo/product-coffee.png" alt="coffee" class="product__photo">
           <div class="pod-title product__star-title">Coffee
-            <img class="product__photo-star" src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/empty-star.svg" alt="empty-star">
+            <div class="product__star-box">
+              <img class="product__photo-star" src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/empty-star.svg" alt="empty-star">
+            </div>
           </div>
           <div class="coffee-title product__card-box_margin">brazil coffee gred</div>
           <div class="product__coffee-cost">
@@ -154,11 +156,13 @@
         <div class="product__card-box">
           <img src="photo/product-coffee.png" alt="coffee" class="product__photo">
           <div class="pod-title product__star-title">Coffee
-            <img class="product__photo-star" src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/star.svg" alt="star">
-            <img class="product__photo-star"  src="photo/empty-star.svg" alt="empty-star">
+            <div class="product__star-box">
+              <img class="product__photo-star" src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/star.svg" alt="star">
+              <img class="product__photo-star"  src="photo/empty-star.svg" alt="empty-star">
+            </div>
           </div>
           <div class="coffee-title product__card-box_margin">brazil coffee gred</div>
           <div class="product__coffee-cost">
@@ -457,7 +461,8 @@
   </div>
 </footer>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+<script src="js/burger-menu.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="libs/slick/slick.min.js"></script>
