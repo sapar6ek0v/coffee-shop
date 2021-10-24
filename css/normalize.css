@@ -352,6 +352,13 @@ template {
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    cursor: pointer;
+}
 * a{
     text-decoration: none;
+    cursor: grab;
+}
+* a:active{
+    cursor: grabbing;
 }

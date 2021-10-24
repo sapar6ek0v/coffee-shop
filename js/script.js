@@ -11,7 +11,7 @@ $('.testimonial__card-boxes').slick({
             }
         },
         {
-            breakpoint: 992,
+            breakpoint: 993,
             settings: {
                 arrows: false,
                 centerMode: true,

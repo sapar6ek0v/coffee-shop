@@ -160,6 +160,7 @@
     font-size: 24px;
   }
   .header__burger {
+    cursor: pointer;
     display: block;
     position: relative;
     width: 30px;
@@ -516,13 +517,26 @@
     margin: 17px;
     padding: 15px;
   }
+  .testimonial__button {
+    padding: 13px 13px 11px;
+  }
+  .testimonial__button_black {
+    margin-right: 11px;
+  }
+  .testimonial__item:before {
+    width: 44px;
+  }
+  .testimonial__item:after {
+    width: 63px;
+    left: 44px;
+  }
   .testimonial__text {
     max-width: 241px;
     font-size: 14px;
   }
 
   .table-book {
-    padding: 45px 0;
+    padding: 55px 0 45px;
   }
   .table-book__form-box {
     max-width: 444px;
@@ -725,14 +739,20 @@
     top: 50px;
     right: 19px;
   }
+  .testimonial__item:before, .testimonial__item:after {
+    top: 24px;
+  }
   .testimonial__icon-box {
     position: absolute;
     top: 104px;
     right: 20px;
   }
+  .testimonial__button {
+    padding: 13px 13px 10px;
+  }
 
   .table-book {
-    padding: 22px 0 45px;
+    padding: 50px 0 45px;
   }
   .table-book__form-box {
     max-width: 319px;
@@ -948,7 +968,26 @@
     top: 258px;
     right: 58px;
   }
+  .testimonial__item:before, .testimonial__item:after {
+    top: 20px;
+  }
+  .testimonial__item:before {
+    width: 35px;
+  }
+  .testimonial__item:after {
+    width: 56px;
+    left: 34px;
+  }
+  .testimonial__button_black {
+    margin-right: 5px;
+  }
+  .testimonial__buttons-photo {
+    height: 18px;
+  }
 
+  .table-book {
+    padding: 40px 0 65px;
+  }
   .table-book__card-box {
     min-height: 393px;
   }

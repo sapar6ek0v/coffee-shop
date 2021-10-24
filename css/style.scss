@@ -74,6 +74,9 @@ body{
       color: #C99E71;
       text-decoration: underline;
     }
+    &:active{
+      color: black;
+    }
   }
   &__logo{
     &_photo{
@@ -85,11 +88,13 @@ body{
       z-index: 5;
     }
     &_icon-search{
+      cursor: pointer;
       position: relative;
       z-index: 6;
       padding-right: 48px;
     }
     &_icon-bag{
+      cursor: pointer;
       position: relative;
       z-index: 7;
     }
@@ -175,6 +180,7 @@ body{
     &_photo{
       transition: 500ms;
       &:hover{
+        cursor: grab;
         transform: scale(1.060);
       }
     }
@@ -208,6 +214,7 @@ body{
     width: 100%;
     transition: 500ms;
     &:hover{
+      cursor: grab;
       transform: scale(1.060);
     }
   }
@@ -216,6 +223,7 @@ body{
     width: 100%;
     transition: 500ms;
     &:hover{
+      cursor: grab;
       transform: scale(1.060);
     }
   }
@@ -230,6 +238,7 @@ body{
     grid-row: 1 / 3;
     transition: 400ms;
     &:hover{
+      cursor: grab;
       transform: scale(1.060);
     }
   }
@@ -276,6 +285,7 @@ body{
     margin-bottom: 56px;
     transition: 500ms;
     &:hover{
+      cursor: grab;
       transform: scale(1.060);
     }
   }
@@ -372,6 +382,7 @@ body{
     align-items: center;
     transition: 300ms;
     &:hover{
+      cursor: grab;
       transform: scale(1.060);
     }
   }
@@ -398,6 +409,7 @@ body{
     margin-bottom: 56px;
   }
   &__card-box{
+    cursor: grab;
     background: #1C1814;
     padding: 20px;
     width: 50%;
@@ -405,6 +417,9 @@ body{
     &:hover{
       -webkit-box-shadow:  0 22px 44px rgba(201, 158, 113, 0.2);
       box-shadow: 0 22px 44px rgba(201, 158, 113, 0.2);
+    }
+    &:active{
+      cursor: grabbing;
     }
   }
   &__text-photo-box{
@@ -435,6 +450,47 @@ body{
   &__icon-box{
     display: flex;
     justify-content: end;
+  }
+  &__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    position: relative;
+    &::after,
+    &::before {
+      content: "";
+      height: 4px;
+      border-radius: 3px;
+      position: absolute;
+      cursor: pointer;
+    }
+    &::before{
+      width: 50px;
+      background: #C99E71;
+      top: 30px;
+      left: 0;
+    }
+    &::after {
+      width: 70px;
+      background: #FFFFFF;
+      opacity: 0.1;
+      top: 30px;
+      left: 50px;
+    }
+  }
+  &__button{
+    border-radius: 50px;
+    padding: 16px;
+    border: none;
+    &_black{
+      background: #121315;
+      margin-right: 16px;
+    }
+    &_white{
+      background: #C99E71;
+    }
   }
 }
 
@@ -468,6 +524,7 @@ body{
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 24px;
+    cursor: pointer;
     &_margin{
       margin-bottom: 56px;
     }
@@ -501,6 +558,7 @@ body{
     width: 366px;
     transition: 400ms;
     &:hover{
+      cursor: grab;
       transform: scale(1.060);
     }
   }
@@ -571,6 +629,9 @@ body{
     &:hover{
       color: #C99E71;
       text-decoration: underline;
+    }
+    &:active{
+      color: #1C1814;
     }
   }
   &__label{

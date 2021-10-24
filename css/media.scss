@@ -177,6 +177,7 @@
       font-size: 24px;
     }
     &__burger{
+      cursor: pointer;
       display: block;
       position: relative;
       width: 30px;
@@ -376,6 +377,7 @@
 }
 
 
+
 @media (max-width: 768px) {
 //  from 768px to 576px
   .container{
@@ -556,6 +558,21 @@
       margin: 17px;
       padding: 15px;
     }
+    &__button{
+      padding: 13px 13px 11px;
+      &_black{
+        margin-right: 11px;
+      }
+    }
+    &__item{
+      &:before{
+        width: 44px;
+      }
+      &:after{
+        width: 63px;
+        left: 44px;
+      }
+    }
     &__text {
       max-width: 241px;
       font-size: 14px;
@@ -564,7 +581,7 @@
 
 
   .table-book {
-    padding: 45px 0;
+    padding: 55px 0 45px;
     &__form-box {
       max-width: 444px;
       padding: 30px 34px;
@@ -612,6 +629,9 @@
       font-size: 14px;
     }
   }
+
+
+
   .footer{
     padding: 45px 0 0;
     &__ul{
@@ -787,17 +807,25 @@
       top: 50px;
       right: 19px;
     }
+    &__item{
+      &:before,
+      &:after{
+        top: 24px;
+      }
+    }
     &__icon-box {
       position: absolute;
       top: 104px;
       right: 20px;
     }
-
+    &__button{
+      padding: 13px 13px 10px;
+    }
   }
 
 
   .table-book{
-    padding: 22px 0 45px;
+    padding: 50px 0 45px;
     &__form-box {
       max-width: 319px;
       padding: 24px 20px;
@@ -1049,10 +1077,32 @@
       top: 258px;
       right: 58px;
     }
+    &__item{
+      &:before,
+      &:after{
+        top: 20px;
+      }
+      &:before{
+        width: 35px;
+      }
+      &:after{
+        width: 56px;
+        left: 34px;
+      }
+    }
+    &__button{
+      &_black{
+        margin-right: 5px;
+      }
+    }
+    &__buttons-photo{
+      height: 18px;
+    }
   }
 
 
   .table-book{
+    padding: 40px 0 65px;
     &__card-box{
       min-height: 393px;
     }
