@@ -89,16 +89,51 @@ body {
   margin: 0 auto;
   z-index: 5;
 }
-.header__logo_icon-search {
-  cursor: pointer;
-  position: relative;
-  z-index: 6;
-  padding-right: 48px;
-}
 .header__logo_icon-bag {
   cursor: pointer;
   position: relative;
   z-index: 7;
+}
+.header__search-box {
+  position: absolute;
+  top: 27px;
+  right: 14px;
+  z-index: 3;
+  transform: translate(-50%, 50%);
+  height: 40px;
+  background: #1C1814;
+  border-radius: 40px;
+  border: 1px solid white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__search-bth {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__search {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  transition: 0.4s;
+  width: 0;
+}
+.header__search:active {
+  animation-play-state: paused;
+}
+
+.header__search-box:hover > .header__search {
+  width: 240px;
 }
 
 .subtitle {
