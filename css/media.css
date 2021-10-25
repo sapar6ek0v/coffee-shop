@@ -356,6 +356,9 @@
     margin-bottom: 39px;
     font-size: 15px;
   }
+  .hero__li {
+    margin-bottom: 40px;
+  }
 
   .process {
     padding: 100px 0 15px;
@@ -613,6 +616,14 @@
   .header__logo_icon-search, .header__logo_icon-bag {
     height: 23px;
   }
+  .header__search-box {
+    top: 41px;
+    right: 39px;
+    height: 33px;
+  }
+  .header__li {
+    margin-bottom: 30px;
+  }
 
   .hero {
     min-height: 422px;
@@ -813,6 +824,9 @@
 
   .header__logo_icon-search {
     padding-right: 21px;
+  }
+  .header__li {
+    margin-bottom: 25px;
   }
 
   .button {

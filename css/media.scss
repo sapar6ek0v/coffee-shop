@@ -394,6 +394,9 @@
       margin-bottom: 39px;
       font-size: 15px;
     }
+    &__li{
+      margin-bottom: 40px;
+    }
   }
 
 
@@ -669,6 +672,14 @@
         height: 23px;
       }
     }
+    &__search-box {
+      top: 41px;
+      right: 39px;
+      height: 33px;
+    }
+    &__li{
+      margin-bottom: 30px;
+    }
   }
 
 
@@ -899,6 +910,9 @@
   .header {
     &__logo_icon-search {
       padding-right: 21px;
+    }
+    &__li{
+      margin-bottom: 25px;
     }
   }
 

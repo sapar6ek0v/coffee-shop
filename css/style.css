@@ -96,10 +96,9 @@ body {
 }
 .header__search-box {
   position: absolute;
-  top: 27px;
-  right: 14px;
+  top: 47px;
+  right: 39px;
   z-index: 3;
-  transform: translate(-35%, 50%);
   height: 40px;
   background: #1C1814;
   border-radius: 40px;
