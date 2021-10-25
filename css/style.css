@@ -99,7 +99,7 @@ body {
   top: 27px;
   right: 14px;
   z-index: 3;
-  transform: translate(-50%, 50%);
+  transform: translate(-35%, 50%);
   height: 40px;
   background: #1C1814;
   border-radius: 40px;
@@ -133,7 +133,7 @@ body {
 }
 
 .header__search-box:hover > .header__search {
-  width: 240px;
+  width: 180px;
 }
 
 .subtitle {
